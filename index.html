@@ -11,6 +11,23 @@
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
+        <script>
+            function toggleMaintenanceMode() {
+                const body = document.body;
+                const maintenanceMessage = document.getElementById('maintenance-message');
+                if (body.classList.contains('maintenance')) {
+                    body.classList.remove('maintenance');
+                    maintenanceMessage.style.display = 'none';
+                } else {
+                    body.classList.add('maintenance');
+                    maintenanceMessage.style.display = 'block';
+                }
+            }
+
+            function closeWebsite() {
+                document.body.innerHTML = '<h1 style="text-align:center; margin-top:20%;">This website is currently unavailable.</h1>';
+            }
+        </script>
     </head>
     <body>
         <!-- Navbar -->
@@ -28,6 +45,7 @@
                 <li><a href="#tours" class="cir_border">Tours</a></li>
                 <li><a href="#about" class="cir_border">About</a></li>
                 <li><a href="#contribution" class="cir_border">Contributors</a></li>
+                <li><a href="#admin" class="cir_border">Admin</a></li>
             </ul>
             <img src="./img/menu-btn.png" alt="menu" class="menu-btn" />
         </nav>
@@ -41,6 +59,11 @@
                 <a href="#about" class="ctn">Learn more</a>
             </div>
         </header>
+
+        <!-- Maintenance Message -->
+        <div id="maintenance-message" style="display:none; background-color:yellow; padding:10px; text-align:center;">
+            <h2>We are currently in maintenance mode. Some features may be unavailable.</h2>
+        </div>
 
         <!-- Events -->
         <section class="events" id="events">
@@ -101,6 +124,18 @@
                 <div class="line"></div>
             </div>
             <p>San Sebastián, or Donostia in Basque, is a picturesque city known for its stunning beaches, vibrant culture, and world-renowned cuisine.</p>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin" style="display:none;">
+            <div class="title">
+                <h1>Admin Panel</h1>
+                <div class="line"></div>
+            </div>
+            <div class="admin-controls">
+                <button onclick="toggleMaintenanceMode()">Toggle Maintenance Mode</button>
+                <button onclick="closeWebsite()">Close Website</button>
+            </div>
         </section>
 
         <!-- Contributors -->
