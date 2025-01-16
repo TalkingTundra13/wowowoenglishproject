@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ADVENTURE</title>
+        <title>San Sebastián Tourism</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -30,22 +30,20 @@
         />
         <link rel="manifest" href="/site.webmanifest" />
     </head>
-    <body
-        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
-    >
+    <body>
         <!--navbar-->
         <nav class="navbar glass" style="height: 70px">
-            <span
-                ><a href="#home" style="display: flex; align-items: center"
-                    ><img
+            <span>
+                <a href="#home" style="display: flex; align-items: center">
+                    <img
                         class="img2"
-                        src="./img/mountain.png"
+                        src="./img/san_sebastian_logo.png"
                         width="40"
                         style="margin: -25px -10px -25px -20px"
                     />
-                    <h1 class="logo">&nbsp;ADVENTURE</h1></a
-                ></span
-            >
+                    <h1 class="logo">&nbsp;San Sebastián</h1>
+                </a>
+            </span>
             <ul class="nav-links">
                 <li>
                     <a href="#home" id="pri" class="active cir_border">Home</a>
@@ -59,43 +57,19 @@
                 </li>
                 <li><a href="#about" id="quint" class="cir_border">About</a></li>
                 <li>
-                    <a href="#contribution" id="hex" class="cir_border"
-                        >Contributions</a
-                    >
-                </li>
-                <li>
                     <a href="#contact" id="hept" class="cir_border">Contact</a>
                 </li>
-                <li>
-                    <div>
-                        <input
-                            type="checkbox"
-                            class="checkbox dark"
-                            id="checkbox"
-                        />
-                        <label for="checkbox" class="label">
-                            <i class="fa fa-moon-o"></i>
-                            <i class="fa fa-sun-o"></i>
-                            <div class="ball"></div>
-                        </label>
-                    </div>
-                </li>
             </ul>
-            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+            <img src="./img/menu-btn.png" alt="Menu" class="menu-btn" />
         </nav>
         <!--navbar-->
 
         <header id="home">
             <div class="header-content">
-                <h2 id="quote">Álvaro Echeberria, Ekaitz Lázaro, Jon Gabirondo and Leander Leiva.</h2>
+                <h2 id="quote">Donostia - San Sebastián.</h2>
                 <div class="line"></div>
-                <h1>Donostia - San Sebastián</h1>
-                <a
-                    href="#about"
-                    class="ctn"
-                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
-                    >Learn more</a
-                >
+                <h1>Discover the Beauty of the Basque Coast.</h1>
+                <a href="#about" class="ctn">Learn More</a>
             </div>
         </header>
 
@@ -108,33 +82,31 @@
                 </div>
                 <div class="row">
                     <article class="card col">
-                        <img class="card-img" src="./img/img1.jfif" />
-                        <h4 class="dark">Everest camp trek</h4>
+                        <img class="card-img" src="./img/jazz_festival.jpg" />
+                        <h4 class="dark">Jazzaldia</h4>
                         <p class="font-color">
-                            Everest base camp trek is without a doubt, one of
-                            the most renowned travel destinations in the world.
+                            Enjoy live jazz performances by renowned artists at the
+                            San Sebastián Jazz Festival.
                         </p>
-                        <a href="#" class="ctn">All Details</a>
+                        <a href="#" class="ctn">Details</a>
                     </article>
                     <article class="card col">
-                        <img src="./img/img2.jfif" />
-                        <h4 class="dark">Walking holidays</h4>
+                        <img src="./img/film_festival.jpg" />
+                        <h4 class="dark">Film Festival</h4>
                         <p class="font-color">
-                            Join small guided group walks, enjoy a challenging
-                            trek, or a luxury private guided walk which can be
-                            made especially for you.
+                            Experience the prestigious San Sebastián
+                            International Film Festival.
                         </p>
-                        <a href="#" class="ctn">All Details</a>
+                        <a href="#" class="ctn">Details</a>
                     </article>
                     <article class="card col">
-                        <img src="./img/img2.jfif" />
-                        <h4 class="dark">Andaman Beaches</h4>
+                        <img src="./img/gastronomy.jpg" />
+                        <h4 class="dark">Gastronomy Week</h4>
                         <p class="font-color">
-                            Diving in Andaman Beaches is exceptional. The costal
-                            belt surroundings is one of the richest coral reef
-                            ecosystems in the world.
+                            Indulge in Basque cuisine and explore the culinary
+                            delights of San Sebastián.
                         </p>
-                        <a href="#" class="ctn">All Details</a>
+                        <a href="#" class="ctn">Details</a>
                     </article>
                 </div>
             </div>
@@ -144,190 +116,44 @@
         <!--Explore-->
         <section class="explore" id="explore">
             <div class="explore-content">
-                <h1>EXPLORE THE WORLD</h1>
+                <h1>Explore San Sebastián</h1>
                 <div class="line"></div>
                 <p>
-                    “Travel makes one modest. You see what a tiny place you
-                    occupy in the world.”– Gustav Flaubert <br />Exploring will
-                    make you want to pack your bag, book that ticket and jet
-                    away.
+                    Stroll along La Concha Beach, visit the iconic Monte Igueldo,
+                    and enjoy panoramic views of this beautiful city by the sea.
                 </p>
-                <a href="#" class="ctn">Explore more</a>
+                <a href="#" class="ctn">Explore More</a>
             </div>
         </section>
         <!--Explore-->
 
-        <!--tours-->
+        <!--Tours-->
         <section class="tours" id="tours">
             <div class="container row">
                 <div class="col content-col">
-                    <h1 class="font-color">UPCOMING TOURS & DESTINATION</h1>
+                    <h1 class="font-color">Upcoming Tours & Destinations</h1>
                     <div class="line"></div>
                     <p>
-                        Wed 28 sept 2023 : Port of Spain City Tour and Birdseye
-                        Fort View. <br />
-                        Sat 1 oct 2023 : Tour the Gasparee Caves.<br />
-                        Tues 4 oct 2023 : Trinidad North Coast Experience.
-                        <br />
-                        and many more ......
+                        - Walking Tour of Parte Vieja (Old Town) <br />
+                        - Pintxo Tasting Tour <br />
+                        - Boat Excursion to Isla Santa Clara <br />
+                        - Sunset Cruise along the Basque Coast
                     </p>
-                    <a href="#" class="ctn">Learn more</a>
+                    <a href="#" class="ctn">Learn More</a>
                 </div>
                 <div class="image-col">
                     <div class="image-gallery">
-                        <img src="./img/img3.png" alt="" />
-                        <img src="./img/img4.png" alt="" />
-                        <img src="./img/img5.png" alt="" />
-                        <img src="./img/img6.png" alt="" />
+                        <img src="./img/parte_vieja.jpg" alt="Old Town" />
+                        <img src="./img/pintxos.jpg" alt="Pintxos" />
+                        <img src="./img/santa_clara.jpg" alt="Santa Clara" />
+                        <img src="./img/sunset_cruise.jpg" alt="Sunset Cruise" />
                     </div>
                 </div>
             </div>
-            <br /><br /><br /><br />
         </section>
-        <!--tours-->
+        <!--Tours-->
 
-        <!-- About -->
-        <section id="about">
-            <div class="title">
-                <h1 class="font-color">About Us</h1>
-                <div class="line"></div>
-            </div>
-            <br />
-            <div id="about_us">
-                <div class="boxx">
-                    <div class="containerx">
-                        <input type="radio" name="slider" id="item-1" checked />
-                        <input type="radio" name="slider" id="item-2" />
-                        <input type="radio" name="slider" id="item-3" />
-                        <div class="cards">
-                            <label class="cardt" for="item-1" id="col-img-1">
-                                <img src="./img/carousel-img4.jpg" />
-                            </label>
-                            <label class="cardt" for="item-2" id="col-img-2">
-                                <img src="./img/carousel-img5.jpg" />
-                            </label>
-                            <label class="cardt" for="item-3" id="col-img-3">
-                                <img src="./img/carousel-img6.jpg" />
-                            </label>
-                            
-                        </div>
-                    </div>
-                    <span id="about-quad"
-                        ><a href="#home"
-                            ><center>
-                                <h1
-                                    style="
-                                        font-family: var(--ff-montserrat);
-                                        color: white;
-                                    "
-                                >
-                                    Find that
-                                </h1>
-                                <br />
-                                <img
-                                    class="img2"
-                                    src="./img/mountain_dark.jpg"
-                                    width="200"
-                                    style="border-radius: 12%"
-                                />
-                                <br />
-                                <h1 class="logo" style="font-size: 50px">
-                                    ADVENTURE
-                                </h1>
-                            </center>
-                        </a>
-                    </span>
-                </div>
-            </div>
-        </section>
-        <!-- About -->
-
-        <!-- Contributions -->
-        <div class="title">
-            <h1 class="font-color">Contributors</h1>
-            <div class="line"></div>
-        </div>
-        <section class="contributors" id="contribution">
-            <div class="concard">
-                <img
-                    src="https://github.com/PritamSarbajna.png"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-                <div class="text">
-                    <h1>Pritam Sarbajna</h1>
-                </div>
-                <div class="logolink">
-                    <a href="https://github.com/PritamSarbajna" target="_blank"
-                        ><img
-                            src="img/GitHub120px.png"
-                            alt="Github-Logo"
-                            class="github-logo"
-                    /></a>
-                </div>
-            </div>
-
-
-            <div class="concard">
-                <img
-                    src="https://github.com/athar-ansari.png"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-                <div class="text">
-                    <h1>Álvaro Echeberria</h1>
-                </div>
-                <div class="logolink">
-                    <a href="https://github.com/athar-ansari" target="_blank"
-                        ><img
-                            src="img/GitHub120px.png"
-                            alt="Github-Logo"
-                            class="github-logo"
-                    /></a>
-                </div>
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://github.com/prakhartiwai0.png"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-                <div class="text">
-                    <h1>Jon Gabirondo</h1>
-                </div>
-                <div class="logolink">
-                    <a href="https://github.com/prakhartdiwari0" target="_blank"
-                        ><img
-                            src="img/GitHub120px.png"
-                            alt="Github-Logo"
-                            class="github-logo"
-                    /></a>
-                </div>
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://github.com/hassana123.png"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-                <div class="text">
-                    <h1>Leander Leiva</h1>
-                </div>
-                <div class="logolink">
-                    <a href="https://github.com/hassana123" target="_blank"
-                        ><img
-                            src="img/GitHub120px.png"
-                            alt="Github-Logo"
-                            class="github-logo"
-                    /></a>
-                </div>
-            </div>
-        </section>
-        <!-- Contributions -->
-
-        <!-- contact -->
+        <!--Contact-->
         <section id="contact">
             <div class="title">
                 <h1 class="font-color">Contact Us</h1>
@@ -336,7 +162,7 @@
             <div class="contact_us">
                 <form class="cform" action="" method="post">
                     <div class="crow-message">
-                        <h1 class="color">Send us a message</h1>
+                        <h1 class="color">Send Us a Message</h1>
                         <div></div>
                     </div>
                     <div class="crow-in">
@@ -344,103 +170,58 @@
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Your name"
+                            placeholder="Your Name"
                         />
                         <input
-                            type="text"
+                            type="email"
                             id="email"
                             name="email"
-                            placeholder="Your Email id"
+                            placeholder="Your Email"
                         />
                     </div>
                     <div class="crow">
-                        <div class="ccol-left">
-                            <select name="country" id="country">
-                                <option value="India">India</option>
-                                <option value="Russia">Russia</option>
-                                <option value="usa">USA</option>
-                                <option value="Japan">Japan</option>
-                                <option value="France">France</option>
-                                <option value="Brazil">Brazil</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="crow">
-                        <div class="ccol-left">
-                            <textarea
-                                type="text"
-                                id="remarks"
-                                name="remarks"
-                                placeholder="Your Remarks....."
-                                style="height: 150px"
-                            ></textarea>
-                        </div>
+                        <textarea
+                            id="remarks"
+                            name="remarks"
+                            placeholder="Your Message"
+                            style="height: 150px"
+                        ></textarea>
                     </div>
                     <input class="crow-s" type="submit" value="Submit" />
                 </form>
                 <div class="cbox">
-                    <div>
-                        <p class="cbox-message">
-                            Prefer some other way ?<br />Reach us by using the
-                            details given below
-                        </p>
-                        <div class="cbox-line"></div>
-                    </div>
+                    <p class="cbox-message">
+                        Prefer another way? Contact us using the details below.
+                    </p>
+                    <div class="cbox-line"></div>
                     <div class="c_boxx">
-                        <a href="mailto:abc@gmail.com"
-                            ><i class="fa fa-envelope"></i>
-                            Mail: tourism@adventure.com
+                        <a href="mailto:info@sansebastian.com">
+                            <i class="fa fa-envelope"></i>
+                            Mail: info@sansebastian.com
                         </a>
                     </div>
                     <div class="c_boxx">
-                        <a href="tel:+91-12345-67890"
-                            ><i class="fa fa-phone"></i>
-                            Phone: (+91) 12345-67890
+                        <a href="tel:+34-943-000000">
+                            <i class="fa fa-phone"></i>
+                            Phone: (+34) 943-000000
                         </a>
                     </div>
                     <div class="c_boxx">
-                        <a href="#"
-                            ><i class="fa fa-map-marker"></i>
-                            Location: Kolkata,West Bengal,India
+                        <a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            Location: San Sebastián, Spain
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- contact  -->
-        <!-- up scroll -->
-        <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
-        <!-- end -->
-        <!--footer-->
-        <section class="footer">
-            <span
-                >Created By Pritam Sarbajna | &#169; 2022 All rights
-                reserved.</span
-            >
-            <div class="social">
-                <li>
-                    <a
-                        href="https://pritam-sarbajna-portfolio.netlify.app/"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-globe"></i
-                    ></a>
-                    <a
-                        href="https://github.com/PritamSarbajna"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-github"></i
-                    ></a>
-                    <a
-                        href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-linkedin-square"></i
-                    ></a>
-                </li>
-            </div>
-        </section>
-        <!--footer-->
+        <!--Contact-->
+
+        <footer class="footer">
+            <span>
+                Created for San Sebastián Tourism | © 2025 All rights reserved.
+            </span>
+        </footer>
 
         <script>
             const menuBtn = document.querySelector(".menu-btn");
@@ -450,7 +231,5 @@
                 navlinks.classList.toggle("mobile-menu");
             });
         </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="js/script.js"></script>
     </body>
 </html>
